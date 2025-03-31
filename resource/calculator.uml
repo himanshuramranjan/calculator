@@ -1,0 +1,14 @@
+composite_calculator/
+│── com.calculator
+│   ├── Main.java               // Entry point (Client)
+│
+├── com.calculator.expression   // Component & Leaf
+│   ├── Expression.java         // Interface (Component)
+│   ├── Number.java             // Leaf Class (Numbers)
+│
+├── com.calculator.operation    // Composite (Operations)
+│   ├── Operation.java          // Abstract class (Composite)
+│   ├── Addition.java           // Concrete Addition operation
+│   ├── Subtraction.java        // Concrete Subtraction operation
+│   ├── Multiplication.java     // Concrete Multiplication operation
+│   ├── Division.java           // Concrete Division operation

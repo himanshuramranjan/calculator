@@ -1,3 +1,19 @@
+> Design approach
+
+The core idea is:
+Numbers are treated as leaf nodes.
+Operations like addition and multiplication are composite nodes that can contain other expressions.
+All nodes implement a common interface Expression, so they can be recursively composed and evaluated.
+
+Expression (interface)
+│
+├── Number          (Leaf)         → holds a numeric value
+│
+└── Operation       (Abstract Composite)
+     ├── Addition         (Concrete Composite)
+     └── Multiplication   (Concrete Composite)
+
+
 > Future enhancement for the design
 
 | Enhancement                      | Description                                                                                        |

@@ -38,3 +38,6 @@ Expression (interface)
 | **Support for Unary Operations** | Add support for unary minus, square root, etc.                                                     |
 | **Expression Parsing**           | Build expressions from strings like `"10 + 5 * 2"` using parser logic (can be a separate utility). |
 | **Evaluation Context**           | Add context-aware evaluation later if you introduce variables.                                     |
+
+The Expression Parsing can be solved using the Stack approach (to maintain the "bodmas" rule)
+https://leetcode.com/problems/basic-calculator-ii/description/

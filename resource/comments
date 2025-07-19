@@ -13,6 +13,23 @@ Expression (interface)
      ├── Addition         (Concrete Composite)
      └── Multiplication   (Concrete Composite)
 
+               (*)
+              /   \
+            (+)    2
+           /   \
+         10     5
+
+> Other example following the same design pattern
+
+| Example                | Component Interface | Leaf         | Composite | Use Case                             |
+| ---------------------- | ------------------- | ------------ | --------- | ------------------------------------ |
+| File System            | FileSystemEntity    | File         | Directory | Size calculation, search             |
+| HTML Document Renderer | HTMLElement         | Text, Image  | Div, Body | Recursive DOM rendering              |
+| Organization Hierarchy | Employee            | Developer    | Manager   | Salary, reporting structure          |
+| Graphics Editor        | Graphic             | Circle, Rect | Group     | Drawing complex nested graphics      |
+| UI Menu System         | MenuComponent       | MenuItem     | Menu      | Rendering nested menus, user actions |
+
+
 
 > Future enhancement for the design
 
